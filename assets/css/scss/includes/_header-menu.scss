@@ -1,0 +1,18 @@
+.header_menu{
+    background-color: #ffff;
+    height: 60px;
+    display: flex;
+    ul{
+        display: flex;
+        list-style: none;
+        li{
+           margin: 21px 20px 21px 30px;
+        //    border-right: 1px solid #E5E4E9;
+            color: #181F3F
+            ;
+           &:last-child{
+               border-right: none;
+           }
+        }
+    }
+}

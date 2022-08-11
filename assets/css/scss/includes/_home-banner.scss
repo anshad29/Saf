@@ -1,0 +1,78 @@
+.home-banner{
+    margin-top: 32px;
+    display: flex;
+    .container{
+        .content-wrap{
+            display: flex;
+            .left-cat{
+                width: 205px;
+                height: 426px;
+                margin-top: 30px;
+                padding: 24px;
+                background-color: #fff;
+                border-radius: 10px 0 0 10px;
+                .heading{
+                    font-size: 18px;
+                }
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    li{
+                        font-size: 14px;
+                        border-bottom: 1px solid #E5E4E9;
+                        display: inline-block;
+                        padding: 12px 0;
+                        &:last-child{
+                            border-bottom: none;
+                        }
+                    }
+                }
+                // .menu-list{
+                // }
+                .button-wrap{
+                    button{
+                        color: #181F3F;
+                        border: 1px solid #181F3F ;
+
+                    }
+                }
+            }
+            .banner-wrap{
+                img{
+                    border-radius: 10px;
+                }
+            }
+            .right-cat{
+                width: 205px;
+                height: 426px;
+                margin-top: 30px;
+                padding: 24px;
+                background-color: #fff;
+                border-radius: 0 10px 10px 0;
+                .heading{
+                    font-size: 18px;
+                }
+                .content{
+                    border-bottom: 1px solid #E5E4E9;
+                    padding-top: 16.5px;
+                    .title{
+                        font-size: 14px;
+                        font-weight: 600px;
+                        padding-bottom: 8px;
+                    }
+                    .desc{
+                        font-size: 12px;
+                        padding-bottom: 8px;
+                    }
+                }
+                .button-wrap{
+                    button{
+                        color: #fff;
+                        background-color: #181F3F ;
+
+                    }
+                } 
+            }
+        }
+    }
+}
