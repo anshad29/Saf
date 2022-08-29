@@ -33,14 +33,54 @@
                     button{
                         color: #181F3F;
                         border: 1px solid #181F3F ;
-
+                        &:hover{
+                            color: #fff;
+                            background-color: #181F3F;
+                            
+                        }
                     }
                 }
             }
             .banner-wrap{
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .banner-content{
+                    position: absolute;
+                    color: #fff;
+                    h3{
+                       font-size: 32px;
+                       font-weight: 600px;    
+                    }
+                    h1{
+                        font-size: 42px;
+                        font-weight: 300px;
+                    }
+                }
                 img{
                     border-radius: 10px;
+                    height: 480px;
+                    width: 730px;
+                    object-fit: cover;
                 }
+                .button-wrap{
+                    position: absolute;
+                    margin-top: 130px;
+                   button{
+                    background-color:#ec7451;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 600px;
+                    padding: 10px 26px 11px;
+                    &:hover{
+                        border: 1px solid #ec7451;
+                        background-color: #fff;
+                        color: #ec7451;
+                    }
+                   }
+                } 
             }
             .right-cat{
                 width: 205px;
@@ -69,7 +109,11 @@
                     button{
                         color: #fff;
                         background-color: #181F3F ;
-
+                        &:hover{
+                            color: #181F3F;
+                            border: 1px solid #181F3F;
+                            background-color: #fff; 
+                        }
                     }
                 } 
             }

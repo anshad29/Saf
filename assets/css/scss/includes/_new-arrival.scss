@@ -1,0 +1,39 @@
+.new-arrivals{
+    .container{
+        .carousel{
+            background-color: #fff;
+            border-radius: 10px;
+            // height: 361px;
+            width: 1140px;
+            padding: 24px 24px 49px 24px;
+            .header{
+                display: flex;
+                .button{
+                    a{
+                        color: #ec7451;
+                    }
+                }
+            }
+            .carousel-1{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                .carousel-cell{
+                    margin-right: 24px;
+                    padding: 20px 9px 20px 9px;
+                    width: 162px;
+                    max-width: 30%;
+                    // height: 162px;
+                    border-radius: 4px;
+                    background-color: #fff;
+                    border: 1px solid #E5E4E9;
+                    .price{
+                        color: #181F3F;
+                        font-size: 16px;
+                        font-weight: 700px;
+                    }
+                }
+            }
+        }
+    }
+}
