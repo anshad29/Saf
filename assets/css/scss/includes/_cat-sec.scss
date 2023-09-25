@@ -1,0 +1,69 @@
+.category{
+    margin-bottom: 30px;
+    .container{
+        .category-slider{
+            
+            .slick-arrow{
+                position: absolute;
+                width: 36px;
+                height: 36px;
+                z-index: 2;
+                background-color:#fff;
+                border: 1px solid #fff;
+                border-radius: 4px;
+                box-shadow: 0 4px 10px hsl(252deg 3% 69% / 28%);
+                outline: none;
+                color: #000;
+                top: 50%;
+                transform: translateY(-50%);
+                &.slick-prev{
+                    left: -16px;
+                }
+                &.slick-next{
+                    right: -16px;
+                }
+            } 
+            .c_holder{
+                width: 100%;
+                display: block;
+                .slick-list{
+                    padding: -5px;
+                }
+                    .c-item{
+                        // width: 208px;
+                        padding: 10px;
+                        .c-item-box{
+                            width: 100%;
+                            height: 213px;
+                            border-radius: 10px;
+                            background-color: #fff;
+                            box-shadow: 0 8px 16px hsl(210deg 8% 47% / 10%);
+                            position: relative;
+                            text-align: center;
+                            padding: 15px 30px 30px;
+                            .img-wrap{
+                                display: block;
+                                margin-bottom: 10px;
+                                width: 100%;
+                                object-fit: contain;
+                            }
+                            .c-item-detail{
+                                .c-name{
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    color: #505771;
+                                    text-transform: none;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                
+                    }
+                }
+            
+        }
+    }
+}
+
+
+

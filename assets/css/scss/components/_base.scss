@@ -1,4 +1,47 @@
 body{
     background-color: #E5E5E5;
     overflow-x: hidden;
+    font-family: 'Montserrat';
 }
+
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+}
+a{
+    text-decoration: none;
+}
+
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1170px;
+    }}
+
+
+    .top-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        h4{
+            font-size: 18px;
+            font-weight: 600;
+            color: #1f274a;
+            text-transform: none;
+            line-height: normal;
+            margin-bottom: 0;
+        }
+        .button{
+            a{
+                font-size: 14px;
+                font-weight: 600;
+                color: #ec7451;
+                text-transform: none;
+                line-height: normal;
+            }
+        }
+    }
