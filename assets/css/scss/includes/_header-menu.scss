@@ -6,10 +6,24 @@
         display: flex;
         list-style: none;
         li{
-           margin: 21px 20px 21px 30px;
-        //    border-right: 1px solid #E5E4E9;
-            color: #181F3F
-            ;
+            padding: 0 20px 0 30px;
+            margin: 21px 0;
+            border-right: 1px solid #E5E4E9;
+            color: #505771;
+            font-weight: 500;
+            &:first-child{
+                font-weight: 700;
+                color: #1f274a;
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 10px;
+                    height: 7px;
+                    background: url(/assets/img/drop-down.svg) no-repeat;
+                    margin-left: 12px;
+                }
+            }
            &:last-child{
                border-right: none;
            }

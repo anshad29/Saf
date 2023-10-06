@@ -6,53 +6,12 @@
             // height: 361px;
             padding: 24px 24px 49px 24px;
             margin-bottom: 30px;
-            // .top-wrap{
-            //     display: flex;
-            //     flex-wrap: wrap;
-            //     align-items: center;
-            //     justify-content: space-between;
-            //     h4{
-            //         font-size: 18px;
-            //         font-weight: 600;
-            //         color: #1f274a;
-            //         text-transform: none;
-            //         line-height: normal;
-            //         margin-bottom: 0;
-            //     }
-            //     .button{
-            //         a{
-            //             font-size: 14px;
-            //             font-weight: 600;
-            //             color: #ec7451;
-            //             text-transform: none;
-            //             line-height: normal;
-            //         }
-            //     }
-            // }
             .carousel-1{
                 display: flex;
                 align-items: center;
                 width: 100%;
                 position: relative;
                 z-index: 1;
-                .slick-arrow{
-                    position: absolute;
-                    width: 36px;
-                    height: 36px;
-                    z-index: 2;
-                    background-color:#fff;
-                    border: 1px solid #fff;
-                    border-radius: 4px;
-                    box-shadow: 0 4px 10px hsl(252deg 3% 69% / 28%);
-                    outline: none;
-                    color: #000;
-                    &.slick-prev{
-                        left: -20px;
-                    }
-                    &.slick-next{
-                        right: -20px;
-                    }
-                }
                 .item{
                     padding: 10px;
                     max-width: 200px;
@@ -100,6 +59,10 @@
                             font-weight: 500;
                             color: #505771;
                             text-transform: capitalize; 
+                            .unit-per{
+                                margin-top: 16px;
+                                margin-bottom: 8px;
+                            }
                         }
                     }
                 }

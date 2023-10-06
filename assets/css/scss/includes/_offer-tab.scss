@@ -83,23 +83,32 @@
                                     line-height: normal;
                                 }
                                 .offer-btn{
-                                    button{
-                                        font-size: 12px;
-                                        font-weight: 600;
-                                        text-transform: capitalize;
-                                        line-height: normal;
-                                        padding: 3px 5px; 
-                                        background: #ec7451!important;
-                                        border: 1px solid #ec7451!important;
-                                        border-radius: 4px!important;
-                                        color: #fff!important;
+                                    a{
+                                        button{
+                                            font-size: 12px;
+                                            font-weight: 600;
+                                            text-transform: capitalize;
+                                            line-height: normal;
+                                            padding: 3px 5px; 
+                                            background: #ec7451;
+                                            border: 1px solid #ec7451!important;
+                                            border-radius: 4px!important;
+                                            color: #fff;
+                                            &:hover{
+                                                background-color: transparent;
+                                                color: #ec7451;
+                                            }
+                                            
+                                        }
+                                        span{
+                                            font-size: 12px;
+                                            font-weight: 500;
+                                            color: #172b4d;
+                                            text-transform: capitalize;
+                                            line-height: normal;                                                                           }
+                                        }
                                     }
-                                    span{
-                                        font-size: 12px;
-                                        font-weight: 500;
-                                        color: #172b4d;
-                                        text-transform: capitalize;
-                                        line-height: normal;                                                                           }
+                                    
                                 }
                             }
                         }
@@ -108,4 +117,3 @@
             }
         }
     }
-}

@@ -17,18 +17,21 @@ header{
                     padding: 25px;
                     display: flex;
                     .custom_select{
-                        width: 115px;
+                        width: 122px;
                         height: 42px;
                         background-color: #EDEFEF;
-                        color: #181F3F;
+                        color: #1f274a;
                         border: none;
                         outline: none;
                         border-radius: 4px 0 0 4px;
                         padding: 0 28px 0 16px;
                         font-size: 12px;
+                        line-height: 18px;
+                        font-weight: 500;
+                        text-transform: capitalize;
                     }
                     input{
-                        width: 320px;
+                        width: 415px;
                         height: 42px;
                         outline: none;
                         border: none;
@@ -52,12 +55,19 @@ header{
                     position: relative;
                     list-style: none;
                     li{
+                        margin-right: 30px;
                         a{
                             display: flex;
                             flex-flow: column;
                             text-decoration: none;
                             color: #fff;
                             font-size: 10px;
+                            align-items: center;
+                            .icon-wrap{
+                                width: 22px;
+                                display: block;
+                                max-width: max-content;
+                            }
                             img{
                               height: 22px;
                               width: 22px;  

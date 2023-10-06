@@ -29,6 +29,8 @@ footer{
         }
         .footer-mid-wrapper{
             margin-top: 30px;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 30px;
             .social-icons{
                 .tittle{
                     font-size: 18px;
@@ -45,6 +47,34 @@ footer{
                         }
                     }
                 }
+            }
+        }
+        .footer-bootom-wrapper{
+            padding-top: 30px;
+            a{
+                font-size: 14px;
+                font-weight: 500;
+                color: hsla(0,0%,100%,.66);
+                text-transform: none;
+                line-height: normal;
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    vertical-align: middle;
+                    background: hsla(0,0%,100%,.66);
+                    width: 2px;
+                    height: 14px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    line-height: 0;
+                }
+            }
+            .copy-right{
+                font-size: 12px;
+                font-weight: 400;
+                color: hsla(0,0%,100%,.56);
+                text-transform: none;
+                line-height: normal;  
             }
         }
     }

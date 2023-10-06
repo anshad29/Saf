@@ -1,1473 +1,1922 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Safq</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/app.min.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/app.min.css" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <nav>
-                <a href=""><img src="/assets/img/safqat-logo-white (1).svg" alt="logo"></a>
-                <div class="search">
-                    <form action="">
-                        <select class="custom_select">
-                            <option value="Products">Products</option>
-                            <option value="Supplier">Supplier</option>  
-                        </select>
-                        <input type="search" placeholder="What are you looking for..?" name="search">
-                        <button class="stab" type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-                <div class="log_panel">
-                    <ul>
-                        <li> <a href="#">
-                             <span class="icon-wrap">
-                                <img src="/assets/img/add-user-logIcon.png" alt="menu">
-                            </span>
-                            <span class="nav-links">My Accounts</span>
-                        </a>
-                        </li>
-                        <li> <a href="#">
-                            <span class="icon-wrap">
-                                <img src="/assets/img/messages.svg" alt="inbox">
-                            </span>
-                            <span class="nav-links">Messages</span>
-                        </a>
-                        </li>
-                        <li> <a href="#">
-                             <span class="icon-wrap">
-                                <img src="/assets/img/basket.svg" alt="">
-                            </span>
-                            <span class="nav-links">Cart</span>
-                        </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+      <div class="container">
+        <nav>
+          <a href=""
+            ><img src="./assets/img/safqat-logo-white (1).svg" alt="logo"
+          /></a>
+          <div class="search">
+            <form action="">
+              <select class="custom_select">
+                <option value="Products">Products</option>
+                <option value="Supplier">Supplier</option>
+              </select>
+              <input
+                type="search"
+                placeholder="What are you looking for..?"
+                name="search"
+              />
+              <button class="stab" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="log_panel">
+            <ul>
+              <li>
+                <a href="#">
+                  <span class="icon-wrap">
+                    <img src="./assets/img/add-user-logIcon.png" alt="menu" />
+                  </span>
+                  <span class="nav-links">My Accounts</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon-wrap">
+                    <img src="./assets/img/messages.svg" alt="inbox" />
+                  </span>
+                  <span class="nav-links">Messages</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon-wrap">
+                    <img src="./assets/img/basket.svg" alt="" />
+                  </span>
+                  <span class="nav-links">Cart</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <section class="header_menu">
-        <div class="container">
-            <ul>
-                <li>All Categories</li>
-                <li>Deals</li>
-                <li>Best sellers</li>
-                <li>Samples</li>
-                <li>Request for quotation</li>
-                <li>Our services</li>
-                <li>Sell with us</li>
-            </ul>
-        </div>
+      <div class="container">
+        <ul>
+          <li>All Categories</li>
+          <li>Deals</li>
+          <li>Best sellers</li>
+          <li>Samples</li>
+          <li>Request for quotation</li>
+          <li>Our services</li>
+          <li>Sell with us</li>
+        </ul>
+      </div>
     </section>
     <section class="home-banner">
-        <div class="container">
-            <div class="content-wrap">
-                <div class="left-cat">
-                    <h4 class="heading">Categories</h4>
-                    <ul class="menu-list">
-                        <li>Beverages</li>
-                        <li>Pantry</li>
-                        <li>Confectionery</li>
-                        <li>Bakery & Pastry</li>
-                        <li>Dairy & Eggs</li>
-                        <li>Frozen Food</li>
-                        <li>Fruits & Vegetables</li>
-                    </ul>   
-                    <div class="button-wrap">
-                        <button class="btn">Shop Now</button>
-                    </div>                 
-                </div>
-                <div class="banner-slider">
-                    <div class="banner-wrap">
-                        <img src="/assets/img/e4b097c7092a28a8d9a6791754007573-43006d5d8dd63529268104830e10fc4f-banner 1 (1).jpg" alt="">
-                        <div class="banner-content">
-                            <h3>B2B marketplace for</h3>
-                            <h1>food and beverages</h1>
-                        </div>
-                        <div class="button-wrap">
-                            <button class="btn">Shop Now</button>
-                        </div>
-                    </div>
-                    <div class="banner-wrap">
-                        <img src="/assets/img/homebanner.avif" alt="">
-                        <div class="banner-content">
-                            <h3>B2B marketplace for</h3>
-                            <h1>food and beverages</h1>
-                        </div>
-                        <div class="button-wrap">
-                            <button class="btn">Shop Now</button>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="right-cat">
-                    <h4 class="heading">Our Benefits</h4>
-                    <div class="content-list">
-                        <div class="content">
-                            <div class="title">Free Registration</div>
-                            <div class="desc">SAFQAT registration is free and the process is simple.</div>
-                        </div>
-                        <div class="content">
-                            <div class="title">Zero Commission</div>
-                            <div class="desc">There is no commission on sales you make on SAFQAT platform.</div>
-                        </div>
-                        <div class="content">
-                            <div class="title">Find New Markets</div>
-                            <div class="desc">Exposure to over 2000+ active buyers from Food and Beverages industry.</div>
-                        </div>
-                    </div>
-                    <div class="button-wrap">
-                        <button class="btn">Explore Now</button>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="content-wrap">
+          <div class="left-cat">
+            <h4 class="heading">Categories</h4>
+            <ul class="menu-list">
+              <li>Beverages</li>
+              <li>Pantry</li>
+              <li>Confectionery</li>
+              <li>Bakery & Pastry</li>
+              <li>Dairy & Eggs</li>
+              <li>Frozen Food</li>
+              <li>Fruits & Vegetables</li>
+            </ul>
+            <div class="button-wrap">
+              <button class="btn">Shop Now</button>
             </div>
+          </div>
+          <div class="banner-slider-wrapper">
+            <button class="slick__arrow slick__prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+                />
+              </svg>
+            </button>
+            <button class="slick__arrow slick__next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"
+                />
+              </svg>
+            </button>
+            <div class="banner-slider">
+              <div class="banner-wrap">
+                <img
+                  src="./assets/img/e4b097c7092a28a8d9a6791754007573-43006d5d8dd63529268104830e10fc4f-banner 1 (1).jpg"
+                  alt="banner-image"
+                />
+                <div class="caption_wrap">
+                  <div class="banner-content">
+                    <h3>B2B marketplace for</h3>
+                    <h1>food and beverages</h1>
+                  </div>
+                  <div class="button-wrap">
+                    <button class="btn">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="banner-wrap">
+                <img src="./assets/img/homebanner.avif" alt="" />
+                <div class="caption_wrap">
+                  <div class="banner-content">
+                    <h3>B2B marketplace for</h3>
+                    <h1>food and beverages</h1>
+                  </div>
+                  <div class="button-wrap">
+                    <button class="btn">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-cat">
+            <h4 class="heading">Our Benefits</h4>
+            <div class="content-list">
+              <div class="content">
+                <div class="title">Free Registration</div>
+                <div class="desc">
+                  SAFQAT registration is free and the process is simple.
+                </div>
+              </div>
+              <div class="content">
+                <div class="title">Zero Commission</div>
+                <div class="desc">
+                  There is no commission on sales you make on SAFQAT platform.
+                </div>
+              </div>
+              <div class="content">
+                <div class="title">Find New Markets</div>
+                <div class="desc">
+                  Exposure to over 2000+ active buyers from Food and Beverages
+                  industry.
+                </div>
+              </div>
+            </div>
+            <div class="button-wrap">
+              <button class="btn">Explore Now</button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="cuisines">
-        <div class="container">
-            <div class="top-wrap">
-                <h4>Shop by cuisines</h4>
-                <div class="button">
-                    <a href="">View all</a>
-                </div>
-            </div>  
-            <div class="cuisine-slider">
-                <div class="cuisines-slide" id="cuisine-slide">
-                    <div class="cuisine-card">
-                        <div class="card-content">
-                            <img src="/assets/img/C-img.png" alt="">
-                            <div class="cusine-name">
-                                <h4>Chinese</h4>
-                                <h6>45 Products</h6>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="cuisine-card">
-                        <div class="card-content">
-                            <img src="/assets/img/C-img.png" alt="">
-                            <div class="cusine-name">
-                                <h4>Chinese</h4>
-                                <h6>45 Products</h6>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="cuisine-card">
-                        <div class="card-content">
-                            <img src="/assets/img/C-img.png" alt="">
-                            <div class="cusine-name">
-                                <h4>Chinese</h4>
-                                <h6>45 Products</h6>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="cuisine-card">
-                        <div class="card-content">
-                            <img src="/assets/img/C-img.png" alt="">
-                            <div class="cusine-name">
-                                <h4>Chinese</h4>
-                                <h6>45 Products</h6>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="cuisine-card">
-                        <div class="card-content">
-                            <img src="/assets/img/C-img.png" alt="">
-                            <div class="cusine-name">
-                                <h4>Chinese</h4>
-                                <h6>45 Products</h6>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="cuisine-card">
-                        <div class="card-content">
-                            <img src="/assets/img/C-img.png" alt="">
-                            <div class="cusine-name">
-                                <h4>Chinese</h4>
-                                <h6>45 Products</h6>
-                            </div>
-                        </div>
-                    </div>      
-                </div>
-            </div>
+      <div class="container">
+        <div class="top-wrap">
+          <h4>Shop by cuisines</h4>
+          <div class="button">
+            <a href="">View all</a>
+          </div>
         </div>
+        <div class="cuisine-slider-wrapper">
+          <button class="slick__arrow slick__prev" id="cuisine__prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+              />
+            </svg>
+          </button>
+          <button class="slick__arrow slick__next" id="cuisine__next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"
+              />
+            </svg>
+          </button>
+          <div class="cuisine-slider">
+            <div class="cuisines-slide" id="cuisine-slide">
+              <div class="cuisine-card">
+                <div class="card-content">
+                  <img src="assets/img/C-img.png" alt="" />
+                  <div class="cusine-name">
+                    <h4>Chinese</h4>
+                    <h6>45 Products</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="cuisine-card">
+                <div class="card-content">
+                  <img src="assets/img/C-img.png" alt="" />
+                  <div class="cusine-name">
+                    <h4>Chinese</h4>
+                    <h6>45 Products</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="cuisine-card">
+                <div class="card-content">
+                  <img src="assets/img/C-img.png" alt="" />
+                  <div class="cusine-name">
+                    <h4>Chinese</h4>
+                    <h6>45 Products</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="cuisine-card">
+                <div class="card-content">
+                  <img src="assets/img/C-img.png" alt="" />
+                  <div class="cusine-name">
+                    <h4>Chinese</h4>
+                    <h6>45 Products</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="cuisine-card">
+                <div class="card-content">
+                  <img src="assets/img/C-img.png" alt="" />
+                  <div class="cusine-name">
+                    <h4>Chinese</h4>
+                    <h6>45 Products</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="cuisine-card">
+                <div class="card-content">
+                  <img src="assets/img/C-img.png" alt="" />
+                  <div class="cusine-name">
+                    <h4>Chinese</h4>
+                    <h6>45 Products</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="new-arrivals">
-        <div class="container">
-            <div class="carousel">
-                <div class="top-wrap">
-                    <h4>New Arrivals</h4>
-                    <div class="button">
-                        <a href="">View all</a>
+      <div class="container">
+        <div class="carousel">
+          <div class="top-wrap">
+            <h4>New Arrivals</h4>
+            <div class="button">
+              <a href="">View all</a>
+            </div>
+          </div>
+          <div class="carousel-wrapper">
+            <!-- <button class="slick__arrow slick__prev" id="carousel__prev1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+                />
+              </svg>
+            </button>
+            <button class="slick__arrow slick__next" id="carousel__next1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"
+                />
+              </svg>
+            </button> -->
+            <div class="carousel-1">
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/mushroom.jpg"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
                     </div>
-                </div>
-                <div class="carousel-1">
-                    <div class="item_holder">
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/mushroom.jpg" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/mushroom.jpg" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/mushroom.jpg" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/mushroom.jpg" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/mushroom.jpg" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/mushroom.jpg" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/mushroom.jpg" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/mushroom.jpg" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/mushroom.jpg" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/mushroom.jpg" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/mushroom.jpg"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/mushroom.jpg"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/mushroom.jpg"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/mushroom.jpg"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/mushroom.jpg"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/mushroom.jpg"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/mushroom.jpg"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/mushroom.jpg"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/mushroom.jpg"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="category">
-        <div class="container">
-            <div class="top-wrap">
-                <h4>Shop by Category</h4>
-                <div class="button">
-                    <a href="">View all</a>
+      <div class="container">
+        <div class="top-wrap">
+          <h4>Shop by Category</h4>
+          <div class="button">
+            <a href="">View all</a>
+          </div>
+        </div>
+        <div class="category_slider_wrapper">
+          <button class="slick__arrow slick__prev" id="cat__prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+              />
+            </svg>
+          </button>
+          <button class="slick__arrow slick__next" id="cat__next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"
+              />
+            </svg>
+          </button>
+          <div class="category-slider">
+            <div class="c_holder">
+              <div class="c-item">
+                <div class="c-item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/Fruits.png"
+                    alt="item-img"
+                  />
+                  <div class="c-item-detail">
+                    <div class="c-name">Fruits</div>
+                  </div>
                 </div>
-            </div>  
-            <div class="category-slider">
-                <div class="c_holder">
-                    <div class="c-item">
-                        <div class="c-item-box">
-                            <img class="img-wrap" src="/assets/img/Fruits.png" alt="item-img">
-                            <div class="c-item-detail">
-                                <div class="c-name">Fruits</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="c_holder">
-                    <div class="c-item">
-                        <div class="c-item-box">
-                            <img class="img-wrap" src="/assets/img/Fruits.png" alt="item-img">
-                            <div class="c-item-detail">
-                                <div class="c-name">Fruits</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="c_holder">
-                    <div class="c-item">
-                        <div class="c-item-box">
-                            <img class="img-wrap" src="/assets/img/Fruits.png" alt="item-img">
-                            <div class="c-item-detail">
-                                <div class="c-name">Fruits</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="c_holder">
-                    <div class="c-item">
-                        <div class="c-item-box">
-                            <img class="img-wrap" src="/assets/img/Fruits.png" alt="item-img">
-                            <div class="c-item-detail">
-                                <div class="c-name">Fruits</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="c_holder">
-                    <div class="c-item">
-                        <div class="c-item-box">
-                            <img class="img-wrap" src="/assets/img/Fruits.png" alt="item-img">
-                            <div class="c-item-detail">
-                                <div class="c-name">Fruits</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="c_holder">
-                    <div class="c-item">
-                        <div class="c-item-box">
-                            <img class="img-wrap" src="/assets/img/Fruits.png" alt="item-img">
-                            <div class="c-item-detail">
-                                <div class="c-name">Fruits</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="c_holder">
-                    <div class="c-item">
-                        <div class="c-item-box">
-                            <img class="img-wrap" src="/assets/img/Fruits.png" alt="item-img">
-                            <div class="c-item-detail">
-                                <div class="c-name">Fruits</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>   
+            <div class="c_holder">
+              <div class="c-item">
+                <div class="c-item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/Fruits.png"
+                    alt="item-img"
+                  />
+                  <div class="c-item-detail">
+                    <div class="c-name">Fruits</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c_holder">
+              <div class="c-item">
+                <div class="c-item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/Fruits.png"
+                    alt="item-img"
+                  />
+                  <div class="c-item-detail">
+                    <div class="c-name">Fruits</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c_holder">
+              <div class="c-item">
+                <div class="c-item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/Fruits.png"
+                    alt="item-img"
+                  />
+                  <div class="c-item-detail">
+                    <div class="c-name">Fruits</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c_holder">
+              <div class="c-item">
+                <div class="c-item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/Fruits.png"
+                    alt="item-img"
+                  />
+                  <div class="c-item-detail">
+                    <div class="c-name">Fruits</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c_holder">
+              <div class="c-item">
+                <div class="c-item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/Fruits.png"
+                    alt="item-img"
+                  />
+                  <div class="c-item-detail">
+                    <div class="c-name">Fruits</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c_holder">
+              <div class="c-item">
+                <div class="c-item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/Fruits.png"
+                    alt="item-img"
+                  />
+                  <div class="c-item-detail">
+                    <div class="c-name">Fruits</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="offer-tab">
-        <div class="container">
-            <div class="offer-tab-wraper">
-                <div class="offer-tab-list-wrapper">
-                    <ul>
-                        <li>
-                            <a href="">Offers</a>
-                        </li>
-                        <li><a href="">Deals</a></li>
-                        <li><a href="">Clearance</a></li>
-                        <li><a href="">50%</a></li>
-                    </ul>
-                    <div class="button-wrap">
-                        <a href="">See all offers</a>
-                    </div>
-                </div>
-                <div class="offer-wrapper">
-                    <div class="row">
-                        <div class="col-md-4 col-12">
-                            <div class="offer-box">
-                                <div class="image-wrapper">
-                                    <img src="/assets/img/offer-img.jpg" alt="">
-                                </div>
-                                <div class="content-wrap">
-                                    <div class="tittle-content">
-                                        Enjoy the finest coffee beans
-                                    </div>
-                                    <div class="subtittle-content">
-                                        Discount of up to 33%
-
-                                    </div>
-                                    <div class="offer-btn">
-                                        <a href="">
-                                            <button>Order now</button>
-                                        </a>
-                                        <span>Free Shipping</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-12">
-                            <div class="offer-box">
-                                <div class="image-wrapper">
-                                    <img src="/assets/img/offer-img.jpg" alt="">
-                                </div>
-                                <div class="content-wrap">
-                                    <div class="tittle-content">
-                                        Enjoy the finest coffee beans
-                                    </div>
-                                    <div class="subtittle-content">
-                                        Discount of up to 33%
-
-                                    </div>
-                                    <div class="offer-btn">
-                                        <a href="">
-                                            <button>Order now</button>
-                                        </a>
-                                        <span>Free Shipping</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-12">
-                            <div class="offer-box">
-                                <div class="image-wrapper">
-                                    <img src="/assets/img/offer-img.jpg" alt="">
-                                </div>
-                                <div class="content-wrap">
-                                    <div class="tittle-content">
-                                        Enjoy the finest coffee beans
-                                    </div>
-                                    <div class="subtittle-content">
-                                        Discount of up to 33%
-
-                                    </div>
-                                    <div class="offer-btn">
-                                        <a href="">
-                                            <button>Order now</button>
-                                        </a>
-                                        <span>Free Shipping</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="offer-tab-wraper">
+          <div class="offer-tab-list-wrapper">
+            <ul>
+              <li>
+                <a href="">Offers</a>
+              </li>
+              <li><a href="">Deals</a></li>
+              <li><a href="">Clearance</a></li>
+              <li><a href="">50%</a></li>
+            </ul>
+            <div class="button-wrap">
+              <a href="">See all offers</a>
             </div>
-        </div>
-
-    </section>
-    <section class="new-arrivals">
-        <div class="container">
-            <div class="carousel">
-                <div class="top-wrap">
-                    <h4>Best Sellers</h4>
-                    <div class="button">
-                        <a href="">View all</a>
+          </div>
+          <div class="offer-wrapper">
+            <div class="row">
+              <div class="col-md-4 col-12">
+                <div class="offer-box">
+                  <div class="image-wrapper">
+                    <img src="assets/img/offer-img.jpg" alt="" />
+                  </div>
+                  <div class="content-wrap">
+                    <div class="tittle-content">
+                      Enjoy the finest coffee beans
                     </div>
-                </div>
-                <div class="carousel-1">
-                    <div class="item_holder">
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="subtittle-content">Discount of up to 33%</div>
+                    <div class="offer-btn">
+                      <a href="">
+                        <button>Order now</button>
+                      </a>
+                      <span>Free Shipping</span>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="offer-box">
+                  <div class="image-wrapper">
+                    <img src="assets/img/offer-img.jpg" alt="" />
+                  </div>
+                  <div class="content-wrap">
+                    <div class="tittle-content">
+                      Enjoy the finest coffee beans
+                    </div>
+                    <div class="subtittle-content">Discount of up to 33%</div>
+                    <div class="offer-btn">
+                      <a href="">
+                        <button>Order now</button>
+                      </a>
+                      <span>Free Shipping</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="offer-box">
+                  <div class="image-wrapper">
+                    <img src="assets/img/offer-img.jpg" alt="" />
+                  </div>
+                  <div class="content-wrap">
+                    <div class="tittle-content">
+                      Enjoy the finest coffee beans
+                    </div>
+                    <div class="subtittle-content">Discount of up to 33%</div>
+                    <div class="offer-btn">
+                      <a href="">
+                        <button>Order now</button>
+                      </a>
+                      <span>Free Shipping</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <section class="new-arrivals">
+      <div class="container">
+        <div class="carousel">
+          <div class="top-wrap">
+            <h4>Best Sellers</h4>
+            <div class="button">
+              <a href="">View all</a>
+            </div>
+          </div>
+          <div class="carousel-1-wrapper">
+            <!-- <button class="slick__arrow slick__prev" id="carousel__prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+                />
+              </svg>
+            </button>
+            <button class="slick__arrow slick__next" id="carousel__next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"
+                />
+              </svg>
+            </button> -->
+            <div class="carousel-1">
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/pr-img-1.png"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/pr-img-1.png"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/pr-img-1.png"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/pr-img-1.png"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/pr-img-1.png"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/pr-img-1.png"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/pr-img-1.png"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/pr-img-1.png"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/pr-img-1.png"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_holder">
+                <div class="item">
+                  <div class="item-box">
+                    <img
+                      class="img-wrap"
+                      src="assets/img/pr-img-1.png"
+                      alt="item-img"
+                    />
+                  </div>
+                  <div class="item-detail">
+                    <div class="item-info">
+                      <div class="name">Mushroom</div>
+                    </div>
+                    <div class="price">
+                      <div class="price-wrap">
+                        AED 25
+                        <span>/KG</span>
+                      </div>
+                    </div>
+                    <div class="product-info">
+                      <div class="unit-per">unit per carton - 6</div>
+                      <div class="exptd-del">
+                        Delivery By :
+                        <span>05-09-2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="add-block">
-        <div class="container">
-            <div class="add-block-wrap">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="add-blk-sec">
-                            <div class="add-image-wrap">
-                                <img src="/assets/img/Ad-img-1.jpg" alt="Add-img">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="add-blk-sec">
-                            <div class="add-image-wrap">
-                                <img src="/assets/img/Ad-img-2.jpg" alt="Add-img">
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="add-block-wrap">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="add-blk-sec">
+                <div class="add-image-wrap">
+                  <img src="assets/img/Ad-img-1.jpg" alt="Add-img" />
                 </div>
+              </div>
             </div>
+            <div class="col-md-6">
+              <div class="add-blk-sec">
+                <div class="add-image-wrap">
+                  <img src="assets/img/Ad-img-2.jpg" alt="Add-img" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="new-arrivals">
-        <div class="container">
-            <div class="carousel">
-                <div class="top-wrap">
-                    <h4>Best Sellers</h4>
-                    <div class="button">
-                        <a href="">View all</a>
-                    </div>
-                </div>
-                <div class="carousel-1">
-                    <div class="item_holder">
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-1 mt-5">
-                    <div class="item_holder">
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="item_holder">
-
-                        <div class="item">
-                            <div class="item-box">
-                                <img class="img-wrap" src="/assets/img/pr-img-1.png" alt="item-img">
-                            </div>
-                            <div class="item-detail">
-                                <div class="item-info">
-                                    <div class="name">Mushroom</div>
-                                </div>
-                                <div class="price">
-                                    <div class="price-wrap">AED 25
-                                        <span>/KG</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="unit-per">unit per carton - 6</div>
-                                    <div class="exptd-del">Delivery By :
-                                        <span>05-09-2022</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
+      <div class="container">
+        <div class="carousel">
+          <div class="top-wrap">
+            <h4>Best Sellers</h4>
+            <div class="button">
+              <a href="">View all</a>
             </div>
+          </div>
+          <div class="carousel-1">
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-1 mt-5">
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_holder">
+              <div class="item">
+                <div class="item-box">
+                  <img
+                    class="img-wrap"
+                    src="assets/img/pr-img-1.png"
+                    alt="item-img"
+                  />
+                </div>
+                <div class="item-detail">
+                  <div class="item-info">
+                    <div class="name">Mushroom</div>
+                  </div>
+                  <div class="price">
+                    <div class="price-wrap">
+                      AED 25
+                      <span>/KG</span>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="unit-per">unit per carton - 6</div>
+                    <div class="exptd-del">
+                      Delivery By :
+                      <span>05-09-2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="rfq-sec">
-        <div class="container">
-            <div class="rfq-banner">
-                <div class="banner-caption">
-                    <div class="tittle">Simplified F&B sourcing</div>
-                    <div class="description">Choose from hundreds of top food and beverages suppliers in one place. Find products, get the best deals, request quotations and communicate directly with suppliers.</div>
-                    <div class="button-wrapper">
-                        <a href="">
-                            <button>Order now</button>
-                        </a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="rfq-banner">
+          <img src="assets/img/rfq-img.png" alt="" />
+          <div class="banner-caption">
+            <div class="tittle">Simplified F&B sourcing</div>
+            <div class="description">
+              Choose from hundreds of top food and beverages suppliers in one
+              place. Find products, get the best deals, request quotations and
+              communicate directly with suppliers.
             </div>
+            <div class="button-wrapper">
+              <a href="">
+                <button>Order now</button>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <footer>
-        <div class="container">
-            <div class="footer-top-wrapper">
-                <div class="links">
-                    <div class="tittle">About Us</div>
-                    <ul>
-                        <li>
-                            <a href="">About SAFQAT</a>
-                        </li>
-                        <li>
-                            <a href="">Press Releases</a>
-                        </li>
-                        <li>
-                            <a href="">Careers</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="links">
-                    <div class="tittle">About Us</div>
-                    <ul>
-                        <li>
-                            <a href="">About SAFQAT</a>
-                        </li>
-                        <li>
-                            <a href="">Press Releases</a>
-                        </li>
-                        <li>
-                            <a href="">Careers</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="links">
-                    <div class="tittle">About Us</div>
-                    <ul>
-                        <li>
-                            <a href="">About SAFQAT</a>
-                        </li>
-                        <li>
-                            <a href="">Press Releases</a>
-                        </li>
-                        <li>
-                            <a href="">Careers</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="links">
-                    <div class="tittle">About Us</div>
-                    <ul>
-                        <li>
-                            <a href="">About SAFQAT</a>
-                        </li>
-                        <li>
-                            <a href="">Press Releases</a>
-                        </li>
-                        <li>
-                            <a href="">Careers</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="links">
-                    <div class="tittle">About Us</div>
-                    <ul>
-                        <li>
-                            <a href="">About SAFQAT</a>
-                        </li>
-                        <li>
-                            <a href="">Press Releases</a>
-                        </li>
-                        <li>
-                            <a href="">Careers</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-mid-wrapper">
-                <div class="social-icons">
-                    <div class="tittle">Follow Us</div>
-                    <div class="icons">
-                        <a href=""><img src="/assets/img/instagram_icn.svg" alt=""></a>
-                        <a href=""><img src="/assets/img/facebook_icn.svg" alt=""></a>
-                        <a href=""><img src="/assets/img/linkedin.svg" alt=""></a>
-                        <a href=""><img src="/assets/img/youtube.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bootom-wrapper">
-                <div class="copy-ryte">
-                    <div class="privacy-policy">
-                        <a href="">Privacy policy</a>
-                        <a href="">Terms & Conditions</a>
-                        <a href="">Returns</a>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="footer-top-wrapper">
+          <div class="links">
+            <div class="tittle">About Us</div>
+            <ul>
+              <li>
+                <a href="">About SAFQAT</a>
+              </li>
+              <li>
+                <a href="">Press Releases</a>
+              </li>
+              <li>
+                <a href="">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="tittle">About Us</div>
+            <ul>
+              <li>
+                <a href="">About SAFQAT</a>
+              </li>
+              <li>
+                <a href="">Press Releases</a>
+              </li>
+              <li>
+                <a href="">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="tittle">About Us</div>
+            <ul>
+              <li>
+                <a href="">About SAFQAT</a>
+              </li>
+              <li>
+                <a href="">Press Releases</a>
+              </li>
+              <li>
+                <a href="">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="tittle">About Us</div>
+            <ul>
+              <li>
+                <a href="">About SAFQAT</a>
+              </li>
+              <li>
+                <a href="">Press Releases</a>
+              </li>
+              <li>
+                <a href="">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="tittle">About Us</div>
+            <ul>
+              <li>
+                <a href="">About SAFQAT</a>
+              </li>
+              <li>
+                <a href="">Press Releases</a>
+              </li>
+              <li>
+                <a href="">Careers</a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="footer-mid-wrapper">
+          <div class="social-icons">
+            <div class="tittle">Follow Us</div>
+            <div class="icons">
+              <a href=""><img src="assets/img/instagram_icn.svg" alt="" /></a>
+              <a href=""><img src="assets/img/facebook_icn.svg" alt="" /></a>
+              <a href=""><img src="assets/img/linkedin.svg" alt="" /></a>
+              <a href=""><img src="assets/img/youtube.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bootom-wrapper">
+          <div class="copy-ryte">
+            <div class="privacy-policy">
+              <a href="">Privacy policy</a>
+              <a href="">Terms & Conditions</a>
+              <a href="">Returns</a>
+            </div>
+            <div class="copy-right">© 2022 SAFQAT. All Rights Reserved.</div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="./assets/js/plugins/jquery.min.js"></script>
     <script src="./assets/js/plugins/slick.js"></script>
     <script src="./assets/js/app.js"></script>
-</body>
+  </body>
 </html>
+
+
+
